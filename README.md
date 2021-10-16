@@ -17,7 +17,7 @@
 </div>
 </p>
 
-##### sample command
+##### Sample command
 ```
 usage: short [-h] [-u]
 
