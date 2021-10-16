@@ -1,5 +1,5 @@
 # Short-URL
-Pemendek link/url Using Api tinyurl.com
+> Pemendek link/url Using Api tinyurl.com
 ##### Info
 <p align="center">
  <a href="https://github.com/Musk-ID">
@@ -16,3 +16,16 @@ Pemendek link/url Using Api tinyurl.com
 </a>
 </div>
 </p>
+
+##### sample command
+```
+usage: ints-dl [-h] [-u]
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -f , --file   d
+
+ 
+Example : ./ints-dl -u https://www.instagram.com/<id> -t image
+          ./ints-dl -f url.txt -t image
+```
