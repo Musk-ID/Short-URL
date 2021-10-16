@@ -1,0 +1,29 @@
+#!/usr/bin/python
+# Wkwkwkw lagi gabut bang.
+import sys
+import requests
+import argparse
+from datetime import datetime
+
+p = '\033[1;37m'
+b = '\033[1;30m'
+t = '\033[1;107m'
+s = '\033[0m'
+
+def __main__():
+	date = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+	print(f"\n ____ _  _ ____ ____ ___ ____ _  _ ____ ____ ____\n [__  |__| |  | |__/  |  |___ |\ | |___ |__/ [__\n ___] |  | |__| |  \  |  |___ | \| |___ |  \ ___]\n {b}{t}       Creator : Kingtebe | YT : FaaL TV        {s}\n")
+	_pars = argparse.ArgumentParser()
+	_pars.add_argument("-u","--url",help="url you want to shorten",metavar="")
+	_args = _pars.parse_args()
+	if _args.url:
+		api = requests.get(f"https://tinyurl.com/api-create.php?url={_args.url}")
+		if api.status_code != 200:
+			exit(" At: %s | Sorry bro, Short URL Failed !! \n"%date)
+		else:
+			exit(" At: %s | %s \n"%(date,api.text))
+	else:
+		_pars.print_help()
+
+if __name__=='__main__':
+	__main__()
