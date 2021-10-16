@@ -22,10 +22,8 @@
 usage: ints-dl [-h] [-u]
 
 optional arguments:
-  -h, --help    show this help message and exit
-  -f , --file   d
+  -h, --help   show this help message and exit
+  -u , --url   url you want to shorten
 
- 
-Example : ./ints-dl -u https://www.instagram.com/<id> -t image
-          ./ints-dl -f url.txt -t image
+Example : ./short -u https://tinyurl.com
 ```
