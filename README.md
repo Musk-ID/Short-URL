@@ -19,7 +19,7 @@
 
 ##### sample command
 ```
-usage: ints-dl [-h] [-u]
+usage: short [-h] [-u]
 
 optional arguments:
   -h, --help   show this help message and exit
